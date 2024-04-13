@@ -9,7 +9,7 @@ export default function PlayerArea({players, color,switchFunction}) {
         <ul>
             {players.map((player,index)  => {
             return (<>
-            <button key={player+"-"+index} onClick={()=>{
+            <button style={{marginTop: '10px'}} key={player+"-"+index} onClick={()=>{
                 console.log("Clicked on ",player);
                 switchFunction(index)
             }}>{player.name+" "}<span className="digits">
